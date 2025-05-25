@@ -28,6 +28,7 @@ module.exports = async (req, res) => {
     res.status(200).json({ reply });
   } catch (err) {
     console.error("OpenAI Fehler:", err.message);
+    console.log(err);
     res.status(500).json({ reply: "Es gab ein Problem mit dem Server." });
   }
 };

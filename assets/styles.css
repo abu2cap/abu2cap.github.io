@@ -1,0 +1,86 @@
+/* 🧱 Container zentriert die Inhalte und sorgt für Rand */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; /* Abstand zwischen Sektionen */
+}
+
+/* 💬 Optional: Text im ganzen Container zentrieren */
+.container section {
+  text-align: center;
+}
+
+/* ✏️ Für bessere Lesbarkeit später */
+section h2 {
+  margin-bottom: 1rem;
+}
+
+section p,
+section li {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+
+.StartseiteUeberschrift {
+    text-align: center;
+}
+
+.StartseiteEinleitung {
+    text-align: center;
+}
+
+.UebermichUeberschrift {
+    text-align: center;
+}
+
+.UebermichText {
+    text-align: center;
+}
+
+.WegUeberschrift {
+    text-align: center;
+}
+
+.WegText {
+    text-align: center;
+}
+
+.SkillsUeberschrift {
+    text-align: center;
+}
+
+.SkillsText {
+    text-align: center;
+}
+
+.ProjektUeberschrift {
+    text-align: center;
+}
+
+.ProjektText {
+    text-align: center;
+}
+
+.ChatbotUeberschrift {
+    text-align: center;
+}
+
+.ChatbotText {
+    text-align: center;
+}
+
+.KontaktUeberschrift {
+    text-align: center;
+}
+
+.KontaktText {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
