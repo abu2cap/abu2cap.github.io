@@ -1,15 +1,14 @@
-const { OpenAI } = require("openai");
+import { OpenAI } from "openai";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "https://abu2cap.github.io");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-  // Handle preflight OPTIONS request
   if (req.method === "OPTIONS") {
     return res.status(200).end();
   }
@@ -39,5 +38,4 @@ module.exports = async (req, res) => {
     console.error("OpenAI Fehler:", err.message);
     res.status(500).json({ reply: "Es gab ein Problem mit dem Server." });
   }
-};
-
+}
