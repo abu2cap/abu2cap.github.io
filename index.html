@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>F Z – Bewerbung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Flo – digitale Visitenkarte</title>
+  <link rel="stylesheet" href="assets/styles.css">
     <style>
         abbr {
             text-decoration: underline;
             text-underline-offset: 4px;
         }
         body {
-            font-family: sans-serif;
+          
+            font-family: 'Anonymous Pro', monospace;
             margin: 0;
             padding: 0;
             background: url('backgroundcode.png') no-repeat center center fixed;
-  background-size: cover;
+            background-size: cover;
         }
               
 
@@ -94,10 +99,51 @@
 
 <body>
 
-  <img src="backgroundcode.png" alt="Test" style="width: 100px;">  
+  <div class="container">
 
-<h1>Willkommen auf der Bewerbungsseite von F Z</h1>
-<p>Hier findest du Informationen über mich, meine Projekte und Kenntnisse.</p>
+    <section id="Startseite">
+    <h1 class="StartseiteUeberschrift">Willkommen auf Flo's Website</h1>
+    <p class="StartseiteEinleitung">Hier findest du Informationen über mich, meine Projekte und Kenntnisse.</p>
+    </section>
+
+    <section id="Uebermich">
+    <h2 class="UebermichUeberschrift">Über mich:</h2>
+    <p class="UebermichText">Ich bin Quereinsteiger mit einer großen Portion Neugier für alles rund ums Programmieren und digitale Gestaltung.</p>
+    </section>
+
+    <section id="Weg">
+    <h2 class="WegUeberschrift">Mein bisheriger Weg</h2>
+    <p class="WegText">Vor der IT war ich in einem anderen Bereich aktiv. Heute richte ich meinen Blick nach vorn – auf Code, Kreativität und Entwicklung.</p>
+    </section>
+
+    <section id="Skills">
+    <h2 class="SkillsUeberschrift">Fähigkeiten und Softskills</h2>
+    <ul class="SkillsText">
+      <li>Erste Erfahrungen mit html5 und CSS</li>
+      <li>Teamfähigkeit: Ich liebe den Austausch mit anderen. Gemeinsam Ziele zu definieren, Ideen zu entwickeln und diese dann als Team zu realisieren.</li>
+    </ul>
+  </section>
+
+<section id="Projekt">
+  <h2 class="ProjektUeberschrift">Dieses Projekt:</h2>
+  <p class="ProjektText">Diese Website ist mein allererstes Projekt. Innerhalb von 2 Wochen geplant und erstellt. Als vollkommener Neuling, ohne jegliche Vorerfahrung, hat mich diese Website manchmal echt Nerven gekostet, aber die süße Frucht des Abschlusses, und die fertige Website am Ende zu sehen, war es vollkommen wert.</p>
+</section>
+
+<section id="Chatbot">
+  <h2 class="ChatbotUeberschrift">Schreib mit meinem Assistenten</h2>
+  <p class="ChatbotText">Ein, zumindest für mich, besonderes Highlight ist der integrierte Chatbot. Dafür nutze ich das ChatGPT 3.5 pro Modell von OpenAI. Ein Javascript Backend, dass auf Vercel läuft, kommuniziert mithilfe meines OpenAI API-Schlüssels, zwischen dieser Website (Frontend) und den OpenAI Servern, wo der eingegebene Text verarbeitet und die entsprechende Antwort generiert wird.</p>
+</section>
+
+<section id="Kontakt">
+  <h2 class="KontaktUeberschrift">Kontakt:</h2>
+  <p class="KontaktText">Aus Datenschutzgründen, werden sie keine persönlichen Informationen über mich hier finden. Falls ich sie allerdings mit dieser Website schon begeistern konnte, dann nutzen sie doch bitte das Kontakformular. Ich werde mich dann so schnell wie möglich bei Ihnen melden. Danke!</p>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Flo | Selbst entwickelt mit HTML, Neugier und Kaffee ☕</p>
+</footer>
+
+  </div>
 
 <div id="chat-toggle" onclick="toggleChat()">
   💬 <abbr title="Schreib mit mir">Chat mit Z's Assistent</abbr>
@@ -143,7 +189,7 @@
     const loadingMsg = appendMessage("F Z Assistent", "⏳ wird geladen...");
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await fetch("https://website-six-sandy-46.vercel.app/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: message })
