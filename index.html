@@ -13,16 +13,7 @@
             text-decoration: underline;
             text-underline-offset: 4px;
         }
-        body {
-          
-            font-family: 'Anonymous Pro', monospace;
-            margin: 0;
-            padding: 0;
-            background: url('backgroundcode.png') no-repeat center center fixed;
-            background-size: cover;
-        }
-              
-
+             
         #chat-toggle {
             position: fixed;
             bottom: 20px;
@@ -49,8 +40,8 @@
         }
 
         .chat-header {
-            background: hsl(0, 16%, 41%);
-            color: #e71717;
+            background: hsl(187, 4%, 58%);
+            color: hsl(0, 29%, 97%);
             padding: 10px;
             border-radius: 8px 8px 0 0;
             font-weight: bold;
@@ -102,18 +93,20 @@
   <div class="container">
 
     <section id="Startseite">
-    <h1 class="StartseiteUeberschrift">Willkommen auf Flo's Website</h1>
+    <h1 class="StartseiteUeberschrift">Willkommen auf <span class="FloHeader">Flos</span> Website</h1>
     <p class="StartseiteEinleitung">Hier findest du Informationen über mich, meine Projekte und Kenntnisse.</p>
+    <p class="StartseiteEinleitung">Um auch über zukünftige Projekte auf dem Laufenden zu bleiben, schau doch ab und zu mal rein!</p>
+    <p class="subline">Viel Spaß beim Erkunden!</p>
     </section>
 
     <section id="Uebermich">
     <h2 class="UebermichUeberschrift">Über mich:</h2>
-    <p class="UebermichText">Ich bin Quereinsteiger mit einer großen Portion Neugier für alles rund ums Programmieren und digitale Gestaltung.</p>
+    <p class="UebermichText">Ich bin Quereinsteiger in der Informatik, mit jeder Menge Neugier und Spaß, für alles rund ums Programmieren und die digitale Welt im Ganzen.</p>
     </section>
 
     <section id="Weg">
-    <h2 class="WegUeberschrift">Mein bisheriger Weg</h2>
-    <p class="WegText">Vor der IT war ich in einem anderen Bereich aktiv. Heute richte ich meinen Blick nach vorn – auf Code, Kreativität und Entwicklung.</p>
+    <h2 class="WegUeberschrift">Mein neuer Weg</h2>
+    <p class="WegText">Vor der IT war ich immer auf der Suche nach Etwas das mich reizt, das mir Erfüllung bietet, das mich motiviert. Und das Interesse an der Informatik war schon immer da, aber es brauchte wohl dieses kleine Projekt hier, um den Funken zu zünden. Dieses unbeschreibliche Gefühl, den Fortschritt in der Realisierung des eigenen Projekts zu sehen, sich immer wieder daran zu erfreuen, wenn die Idee in Code gegossen wurde und funktioniert. Ab diesem Zeitpunkt war mir klar: Das will ich machen!</p>
     </section>
 
     <section id="Skills">
@@ -146,7 +139,7 @@
   </div>
 
 <div id="chat-toggle" onclick="toggleChat()">
-  💬 <abbr title="Schreib mit mir">Chat mit Z's Assistent</abbr>
+  💬 <abbr title="Schreib mit mir">Chat mit Flos Assistent</abbr>
 </div>
 
 <div class="chatbox" id="chatbox" style="display: none;">

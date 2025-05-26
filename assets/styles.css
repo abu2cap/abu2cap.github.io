@@ -1,19 +1,31 @@
-/* 🧱 Container zentriert die Inhalte und sorgt für Rand */
+body {
+          
+    font-family: 'Anonymous Pro', monospace;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, hsl(140, 77%, 40%), #f4fff8);
+    color: #111;
+}
+
+section {
+    background: transparent;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem; /* Abstand zwischen Sektionen */
+  gap: 4rem;
 }
 
-/* 💬 Optional: Text im ganzen Container zentrieren */
+
 .container section {
   text-align: center;
 }
 
-/* ✏️ Für bessere Lesbarkeit später */
+
 section h2 {
   margin-bottom: 1rem;
 }
@@ -24,17 +36,26 @@ section li {
   font-size: 1rem;
 }
 
-
+.FloHeader {
+    color: hwb(59 24% 14%);
+    display: inline-block;
+    animation: reinflippen 0.6s ease-out 0.3s both;
+}
 .StartseiteUeberschrift {
     text-align: center;
+    font-size: 2.7rem;
+    font-weight: bold;
 }
 
 .StartseiteEinleitung {
     text-align: center;
+    font-size: 1.2rem;
+    
 }
 
 .UebermichUeberschrift {
     text-align: center;
+    font-size: 2.1rem;
 }
 
 .UebermichText {
@@ -43,6 +64,7 @@ section li {
 
 .WegUeberschrift {
     text-align: center;
+    font-size: 2.1rem;
 }
 
 .WegText {
@@ -51,6 +73,7 @@ section li {
 
 .SkillsUeberschrift {
     text-align: center;
+    font-size: 2.1rem;
 }
 
 .SkillsText {
@@ -59,6 +82,7 @@ section li {
 
 .ProjektUeberschrift {
     text-align: center;
+    font-size: 2.1rem;
 }
 
 .ProjektText {
@@ -67,6 +91,7 @@ section li {
 
 .ChatbotUeberschrift {
     text-align: center;
+    font-size: 2.1rem;
 }
 
 .ChatbotText {
@@ -75,6 +100,7 @@ section li {
 
 .KontaktUeberschrift {
     text-align: center;
+    font-size: 2.1rem;
 }
 
 .KontaktText {
@@ -83,4 +109,24 @@ section li {
 
 .footer {
     text-align: center;
+    font-size: .8rem;
+}
+
+.subline {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+@keyframes reinflippen {
+  0% {
+    transform: rotateX(90deg) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) scale(1);
+    opacity: 1;
+  }
 }
