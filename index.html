@@ -11,7 +11,7 @@
     <style>
         abbr {
             text-decoration: underline;
-            text-underline-offset: 4px;
+            text-underline-offset: 3.5px;
         }
              
         #chat-toggle {
@@ -93,15 +93,40 @@
   <div class="container">
 
     <section id="Startseite">
-    <h1 class="StartseiteUeberschrift">Willkommen auf <span class="FloHeader">Flos</span> Website</h1>
+    <h1 class="StartseiteUeberschrift"><span class="WillkommenHeader">Willkommen </span> <span class="aufHeader">auf</span> <span class="FloHeader">Flos</span> <span class="WebsiteHeader">Website</span></h1>
     <p class="StartseiteEinleitung">Hier findest du Informationen über mich, meine Projekte und Kenntnisse.</p>
     <p class="StartseiteEinleitung">Um auch über zukünftige Projekte auf dem Laufenden zu bleiben, schau doch ab und zu mal rein!</p>
     <p class="subline">Viel Spaß beim Erkunden!</p>
     </section>
 
     <section id="Uebermich">
-    <h2 class="UebermichUeberschrift">Über mich:</h2>
+    <h2 class="UebermichUeberschrift">Über mich</h2>
     <p class="UebermichText">Ich bin Quereinsteiger in der Informatik, mit jeder Menge Neugier und Spaß, für alles rund ums Programmieren und die digitale Welt im Ganzen.</p>
+    <p>Besondere Interessen:</p>
+    <div class="ZweiSpalten">
+      <div class="LinkeSpalte">Kochen
+        <br>
+        <ul>
+          <li>italienische Pasta</li>
+          <li>türkische Suppen</li>
+          <li>Klassiker der deutschen Küche</li>
+        </ul>
+      </div>
+      <div class="RechteSpalte">Sport und Freizeit
+        <ul>
+          <li>Schwimmen</li>
+          <li>lange Spaziergänge</li>
+          <li>Gaming</li>
+        </ul>
+      </div>
+      <div class="DritteSpalte">Bildung
+        <ul>
+          <li>Physik</li>
+          <li>Geschichte</li>
+          <li>Wirtschaft und Politik</li>
+        </ul>
+      </div>
+    </div>
     </section>
 
     <section id="Weg">
@@ -144,7 +169,7 @@
 
 <div class="chatbox" id="chatbox" style="display: none;">
   <div class="chat-header">
-    Z's Assistent
+    Flos Assistent
     <button onclick="toggleChat()" style="float: right; background: none; border: none; color: white;">✕</button>
   </div>
   <div class="chat-messages" id="messages"></div>
