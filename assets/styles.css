@@ -142,10 +142,13 @@ section p {
 }
 
 .ZweiSpalten {
+    max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .ZweiSpalten .Spalte {
