@@ -166,7 +166,7 @@ section p {
   background-image: url("assets/pics/Bücherregal.jpg");
   background-size: cover;
   background-position: center;
-  background-color: transparent;
+  
 }
 
 .ZweiSpalten {
@@ -201,9 +201,9 @@ section p {
 
 /* aus zwei werden x Spalten, nicht verwirren lassen */
 .ZweiSpalten .DritteSpalte {
-    background-color: hwb(143 6% 25%);
     list-style-position: inside;
     padding-right: 20px;
+    background-image: url("assets/pics/Buecherregal.jpg")
     
 }
 
