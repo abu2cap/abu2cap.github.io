@@ -142,6 +142,33 @@ section p {
   letter-spacing: 0.05em;
 }
 
+.ZweiSpalten .LinkeSpalte:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0, 0.1);
+  background-image: url("assets/pics/Suppe.png");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
+
+.ZweiSpalten .RechteSpalte:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0, 0.1);
+  background-image: url("assets/pics/Gaming.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
+
+.ZweiSpalten .DritteSpalte:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0, 0.1);
+  background-image: url("assets/pics/Bücherregal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
+
 .ZweiSpalten {
     max-width: 90%;
     display: flex;
@@ -157,20 +184,24 @@ section p {
 .ZweiSpalten .Spalte {
     flex: 1;
     padding: 10px;
+    min-height: 200px;
+    min-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-image 0.3s ease;
 }
 
 .ZweiSpalten .LinkeSpalte {
-    background-color: rgb(240, 193, 247);
+    
+    background-color: hwb(143 22% 7%);
 }
 
 .ZweiSpalten .RechteSpalte {
-    background-color: #f095fc;
+    background-color: #45e682;
     
 }
 
 /* aus zwei werden x Spalten, nicht verwirren lassen */
 .ZweiSpalten .DritteSpalte {
-    background-color: #e471f3;
+    background-color: hwb(143 6% 25%);
     list-style-position: inside;
     padding-right: 20px;
     
