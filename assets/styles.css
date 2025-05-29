@@ -12,6 +12,41 @@ section {
     background: transparent;
 }
 
+.fontbold {
+  font-weight: bold;
+}
+
+.fonthbold {
+  font-weight: bolder;
+}
+
+.underlineProjekt {
+  text-decoration: underline;
+  text-underline-offset: 3.5px;
+}
+
+.underlineChat {
+    text-decoration: underline;
+    text-underline-offset: 3.5px;
+}
+ 
+.auflistungabstand {
+  margin: 1rem;
+}
+
+.aligncenter {
+  align-content: center;
+}
+
+.datenschutz {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -39,7 +74,7 @@ section p {
 }
 
 .WillkommenHeader {
-    color: lab(80.38% 11.11 71.77);
+    color: #E1AD01;
     display: inline-block;
     animation: 
       animation3 0.4s ease-out 0.3s both,
@@ -47,7 +82,7 @@ section p {
 }
 
 .aufHeader {
-    color: lab(80.38% 11.11 71.77);
+    color: #E1AD01;
     display: inline-block;
     animation: 
       animation3 0.4s ease-out 0.3s both,
@@ -55,7 +90,7 @@ section p {
 }
 
 .FloHeader {
-    color: lab(80.38% 11.11 71.77);
+    color: #E1AD01;
     display: inline-block;
     animation: 
       animation3 0.4s ease-out 0.3s both,
@@ -63,7 +98,7 @@ section p {
 }
 
 .WebsiteHeader {
-    color: lab(80.38% 11.11 71.77);
+    color: #E1AD01;
     display: inline-block;
     animation: 
       animation3 0.4s ease-out 0.3s both,
