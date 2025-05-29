@@ -41,31 +41,40 @@ section p {
 .WillkommenHeader {
     color: lab(80.38% 11.11 71.77);
     display: inline-block;
-    animation: animation3 0.4s ease-out 0.3s both;
+    animation: 
+      animation3 0.4s ease-out 0.3s both,
+      wobble 2s ease-in-out 1s infinite;
 }
 
 .aufHeader {
     color: lab(80.38% 11.11 71.77);
     display: inline-block;
-    animation: animation3 0.5s ease-out 0.3s both;
+    animation: 
+      animation3 0.4s ease-out 0.3s both,
+      wobble 2s ease-in-out 1s infinite;
 }
 
 .FloHeader {
     color: lab(80.38% 11.11 71.77);
     display: inline-block;
-    animation: animation3 0.6s ease-out 0.3s both;
+    animation: 
+      animation3 0.4s ease-out 0.3s both,
+      wobble 2s ease-in-out 1s infinite;
 }
 
 .WebsiteHeader {
     color: lab(80.38% 11.11 71.77);
     display: inline-block;
-    animation: animation3 0.7s ease-out 0.3s both;
+    animation: 
+      animation3 0.4s ease-out 0.3s both,
+      wobble 2s ease-in-out 1s infinite;
 }
 
 .StartseiteUeberschrift {
     text-align: center;
     font-size: 2.7rem;
     font-weight: bold;
+    color: #E1AD01;
 }
 
 .StartseiteEinleitung {
@@ -295,7 +304,7 @@ section p {
     0% {
     transform: rotateY(90deg) rotateX(90deg) scale(0.8);
     opacity: 0;
-    color: #e471f3;
+    color: #1802e0;
     }
     25% {
     transform: rotateY(60deg) rotateX(60deg) scale(1.0);
@@ -312,5 +321,15 @@ section p {
     100% {
     transform: rotateY(0deg) scale(1);
     opacity: 1;
+    color: #E1AD01;
     }
+}
+
+@keyframes wobble {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
 }
