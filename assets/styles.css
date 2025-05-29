@@ -145,27 +145,33 @@ section p {
 .ZweiSpalten .LinkeSpalte:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0,0,0, 0.1);
-  background-image: url("assets/pics/Suppe.png");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("pics/Suppe.png");
   background-size: cover;
   background-position: center;
   background-color: transparent;
+  transition: background-image 0.3s ease, color 0.3s ease;
+  color: white;
 }
 
 .ZweiSpalten .RechteSpalte:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0,0,0, 0.1);
-  background-image: url("assets/pics/Gaming.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("pics/Gaming.jpg");
   background-size: cover;
   background-position: center;
   background-color: transparent;
+  transition: background-image 0.3s ease, color 0.3s ease;
+  color: white;
 }
 
 .ZweiSpalten .DritteSpalte:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0,0,0, 0.1);
-  background-image: url("assets/pics/Bücherregal.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("pics/Buecherregal.jpg");
   background-size: cover;
   background-position: center;
+  transition: background-image 0.3s ease, color 0.3s ease;
+  color: white;
   
 }
 
@@ -176,7 +182,7 @@ section p {
     gap: 20px;
     margin: 0 auto;
     padding: 0 1rem;
-    text-align: center;
+    align-items: center;
     box-sizing: border-box;
     justify-content: center;
 }
@@ -189,21 +195,31 @@ section p {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-image 0.3s ease;
 }
 
+.ZweiSpalten .Spalte h3 {
+    text-align: center !important;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .ZweiSpalten .LinkeSpalte {
-    
+    list-style-position: inside;
     background-color: hwb(143 22% 7%);
+    text-align: left;
 }
 
 .ZweiSpalten .RechteSpalte {
+    list-style-position: inside;
     background-color: #45e682;
+    text-align: left;
     
 }
 
 /* aus zwei werden x Spalten, nicht verwirren lassen */
 .ZweiSpalten .DritteSpalte {
     list-style-position: inside;
-    padding-right: 20px;
-    background-image: url("assets/pics/Buecherregal.jpg")
+    background-color: hwb(143 6% 25%);
+    text-align: left;
     
 }
 
